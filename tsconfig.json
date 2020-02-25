@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "removeComments": true,
+    "target": "ESNEXT",
+    "lib": [
+      "ES5",
+      "ES2015.Collection"
+    ],
+    "outDir": "lib",
+    "moduleResolution": "node"
+  },
+}

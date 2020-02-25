@@ -4,6 +4,7 @@
   "description": "Spatial hash algorithm for PixiJS scene graphs",
   "main": "lib/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "test"
   },
   "repository": {
@@ -22,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/SukantPal/pixi-spatial-hash/issues"
   },
-  "homepage": "https://github.com/SukantPal/pixi-spatial-hash#readme"
+  "homepage": "https://github.com/SukantPal/pixi-spatial-hash#readme",
+  "devDependencies": {
+    "pixi.js": "^5.2.1",
+    "typescript": "^3.8.2"
+  },
+  "peerDependencies": {
+    "pixi.js": "^5.2.1"
+  },
+  "dependencies": {}
 }
