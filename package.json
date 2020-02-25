@@ -1,0 +1,26 @@
+{
+  "name": "pixi-spatial-hash",
+  "version": "1.0.0",
+  "description": "Spatial hash algorithm for PixiJS scene graphs",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SukantPal/pixi-spatial-hash.git"
+  },
+  "keywords": [
+    "Spatial-hashing",
+    "PixiJS",
+    "algorithms",
+    "Computer",
+    "Graphics"
+  ],
+  "author": "Shukant K. Pal <shukantpal@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SukantPal/pixi-spatial-hash/issues"
+  },
+  "homepage": "https://github.com/SukantPal/pixi-spatial-hash#readme"
+}
