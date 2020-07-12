@@ -1,11 +1,15 @@
 {
   "name": "pixi-spatial-hash",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Spatial hash algorithm for PixiJS scene graphs",
-  "main": "lib/index.js",
+  "main": "lib/pixi-spatial-hash.js",
+  "module": "lib/pixi-spatial-hash.mjs",
+  "bundle": "dist/pixi-spatial-hash.js",
   "scripts": {
-    "build": "tsc",
-    "test": "test"
+    "compile": "rm -rf compile && tsc && api-extractor run",
+    "build": "rollup -c",
+    "test": "floss --path test",
+    "prepublishOnly": "npm run build; npm run compile;"
   },
   "repository": {
     "type": "git",
@@ -25,13 +29,28 @@
   },
   "homepage": "https://github.com/SukantPal/pixi-spatial-hash#readme",
   "devDependencies": {
+    "@pixi/core": "^5.0.0",
+    "@pixi/display": "^5.0.0",
+    "@pixi/graphics": "^5.3.0",
+    "@pixi/math": "^5.0.0",
+    "@pixi/ticker": "^5.0.0",
+    "chai": "^4.2.0",
+    "electron": "^9.1.0",
     "eslint": "^6.8.0",
     "eslint-config-pixi": "^1.0.0",
-    "pixi.js": "^5.2.1",
+    "floss": "^3.0.0",
+    "mocha": "^8.0.1",
+    "rollup": "^2.21.0",
+    "rollup-plugin-sourcemaps": "^0.6.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript": "^1.0.1",
     "typescript": "^3.8.2"
   },
   "peerDependencies": {
-    "pixi.js": "^5.2.1"
+    "@pixi/math": "^5.0.0",
+    "@pixi/core": "^5.0.0",
+    "@pixi/display": "^5.0.0",
+    "@pixi/ticker": "^5.0.0"
   },
   "dependencies": {}
 }
