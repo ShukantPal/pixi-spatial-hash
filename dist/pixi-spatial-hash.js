@@ -1,6 +1,6 @@
 /*!
- * pixi-spatial-hash - v1.0.0
- * Compiled Sun, 12 Jul 2020 15:56:52 UTC
+ * pixi-spatial-hash - v1.1.0
+ * Compiled Sun, 12 Jul 2020 16:15:34 UTC
  *
  * pixi-spatial-hash is licensed under the MIT License.
  * http://www.opensource.org/licenses/mit-license
