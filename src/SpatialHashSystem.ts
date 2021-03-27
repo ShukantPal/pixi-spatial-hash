@@ -6,6 +6,14 @@ import { Ticker } from '@pixi/ticker';
 
 const tempRect = new Rectangle();
 
+const _System = System || (class System
+{
+    destroy(): void
+    {
+        // Blank
+    }
+});
+
 /**
  * System plugin to the renderer for providing spatial hashing on the whole scene graph.
  *
@@ -30,7 +38,7 @@ const tempRect = new Rectangle();
  * @memberof PIXI.system
  * @public
  */
-export class SpatialHashSystem extends System
+export class SpatialHashSystem extends _System
 {
     public hash2D: SpatialHash<DisplayObject>;
     public hashTargets: Set<DisplayObject>;
