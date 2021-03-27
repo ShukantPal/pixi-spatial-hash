@@ -1,6 +1,6 @@
 {
   "name": "@pixi/spatial-hash",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Spatial hash algorithm for PixiJS scene graphs",
   "main": "lib/pixi-spatial-hash.js",
   "module": "lib/pixi-spatial-hash.es.js",
