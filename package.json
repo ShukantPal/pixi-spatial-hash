@@ -6,7 +6,7 @@
   "module": "lib/pixi-spatial-hash.es.js",
   "bundle": "dist/pixi-spatial-hash.js",
   "scripts": {
-    "compile": "rm -rf compile && tsc && api-extractor run",
+    "compile": "rm -rf compile && tsc; api-extractor run",
     "build": "rollup -c ./node_modules/@pixi-build-tools/rollup-configurator/index.js --silent",
     "test": "floss --path test",
     "prepublishOnly": "npm run build; npm run compile;"
@@ -29,7 +29,9 @@
   },
   "homepage": "https://github.com/SukantPal/pixi-spatial-hash#readme",
   "devDependencies": {
+    "@microsoft/api-extractor": "7.13.2",
     "@pixi-build-tools/rollup-configurator": "^1.0.11",
+    "@pixi/app": "^6.0.1",
     "@pixi/core": "^6.0.0",
     "@pixi/display": "^6.0.0",
     "@pixi/graphics": "^6.0.0",
@@ -42,7 +44,7 @@
     "floss": "^5.0.0",
     "mocha": "^8.0.1",
     "rollup": "^2.21.0",
-    "typescript": "^3.8.2"
+    "typescript": "^4.2.3"
   },
   "peerDependencies": {
     "@pixi/core": "^6.0.0",

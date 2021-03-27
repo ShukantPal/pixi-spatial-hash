@@ -109,12 +109,12 @@ export class SpatialHashSystem extends System
     {
         const bounds = objectOrBounds;
 
-        if (objectOrBounds instanceof DisplayObject || objectOrBounds.getBounds)
+        if (objectOrBounds instanceof DisplayObject || 'getBounds' in objectOrBounds)
         {
             objectOrBounds = objectOrBounds.getBounds();
         }
 
-        return this.hash2D.search(bounds);
+        return this.hash2D.search(bounds as Rectangle);
     }
 
     /**

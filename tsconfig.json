@@ -2,14 +2,16 @@
   "compilerOptions": {
     "allowJs": true,
     "removeComments": false,
-    "target": "ESNEXT",
+    "target": "ESNext",
     "lib": [
       "ES5",
-      "ES2015.Collection"
+      "ES2015.Collection",
+      "DOM"
     ],
     "outDir": "compile",
     "moduleResolution": "node",
-    "declaration": true
+    "declaration": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "./src/**/*.ts"
