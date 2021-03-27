@@ -6,8 +6,11 @@ import { Ticker } from '@pixi/ticker';
 
 const tempRect = new Rectangle();
 
-/** @internal */
-const _System = System || (class System
+/**
+ * @ignore
+ * @public
+ */
+export const _System = System || (class System
 {
     destroy(): void
     {
@@ -36,7 +39,6 @@ const _System = System || (class System
  *
  * You must register the "stage" as a hash-target in order to add it to the hash.
  *
- * @memberof PIXI.system
  * @public
  */
 export class SpatialHashSystem extends _System

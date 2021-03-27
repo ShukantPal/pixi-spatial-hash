@@ -1,9 +1,2 @@
-/**
- * @namespace PIXI
- */
-/**
- * @namespace PIXI.systems
- */
-
 export { SpatialHash } from './SpatialHash';
-export { SpatialHashSystem } from './SpatialHashSystem';
+export { SpatialHashSystem, _System } from './SpatialHashSystem';
