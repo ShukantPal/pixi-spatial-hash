@@ -3,3 +3,4 @@ node_modules
 compile
 lib
 dist
+index.d.ts

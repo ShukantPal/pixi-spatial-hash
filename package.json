@@ -23,6 +23,9 @@
     "Graphics"
   ],
   "author": "Shukant K. Pal <shukantpal@outlook.com>",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SukantPal/pixi-spatial-hash/issues"
