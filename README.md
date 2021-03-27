@@ -1,4 +1,6 @@
-# pixi-spatial-hash
+# @pixi/spatial-hash - PixiJS Spatial Hash Kit
+
+[![Node.js CI](https://github.com/SukantPal/pixi-spatial-hash/actions/workflows/node.js.yml/badge.svg)](https://github.com/SukantPal/pixi-spatial-hash/actions/workflows/node.js.yml)
 
 This package provides an 2D spatial hash implementation. You can use the spatial-hash as standalone or as a system on
 your renderer.
