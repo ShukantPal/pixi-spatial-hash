@@ -13,7 +13,7 @@ const tempRect = new Rectangle();
  * @public
  * @see http://www.cs.ucf.edu/~jmesit/publications/scsc%202005.pdf
  */
-export class SpatialHash<Node extends { getBounds(skipUpdate?: boolean, rect?: boolean): Rectangle }>
+export class SpatialHash<Node extends { getBounds(skipUpdate?: boolean, rect?: Rectangle): Rectangle }>
 {
     cellSize: number;
     buckets: Map<string, Set<Node>>;

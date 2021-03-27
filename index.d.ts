@@ -16,7 +16,7 @@ import { Ticker } from '@pixi/ticker';
  * @see http://www.cs.ucf.edu/~jmesit/publications/scsc%202005.pdf
  */
 export declare class SpatialHash<Node extends {
-    getBounds(skipUpdate?: boolean, rect?: boolean): Rectangle;
+    getBounds(skipUpdate?: boolean, rect?: Rectangle): Rectangle;
 }> {
     cellSize: number;
     buckets: Map<string, Set<Node>>;
@@ -30,7 +30,7 @@ export declare class SpatialHash<Node extends {
      * @param object
      * @param bounds - the bounds of the object. This is automatically calculated using {@code getBounds}.
      */
-    put(object: Node, bounds?: any): this;
+    put(object: Node, bounds?: Rectangle): this;
     /**
      * Removes the display-object from the hash.
      *
@@ -44,7 +44,7 @@ export declare class SpatialHash<Node extends {
      * @param object
      * @param bounds
      */
-    update(object: Node, bounds?: any): void;
+    update(object: Node, bounds?: Rectangle): void;
     /**
      * Searches for all the display-objects that intersect with the given rectangle bounds.
      *
