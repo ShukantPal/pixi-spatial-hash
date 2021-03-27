@@ -6,6 +6,7 @@ import { Ticker } from '@pixi/ticker';
 
 const tempRect = new Rectangle();
 
+/** @internal */
 const _System = System || (class System
 {
     destroy(): void
