@@ -6,10 +6,10 @@ devDependencies:
   '@pixi/math': 6.0.1
   '@pixi/ticker': 6.0.1
   chai: 4.2.0
-  electron: 9.1.0
+  electron: 12.0.2
   eslint: 6.8.0
   eslint-config-pixi: 1.0.1_eslint@6.8.0
-  floss: 3.0.0_electron@9.1.0
+  floss: 5.0.0_electron@12.0.2
   mocha: 8.0.1
   rollup: 2.21.0
   typescript: 3.9.6
@@ -244,10 +244,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-7+2BITlgjgDhH0vvwZU/HZJVyk+2XUlvxXe8dFMedNX/aMkaOq++rMAFXc0tM7ij15QaWlbdQASBR9dihi+bDQ==
-  /@types/node/12.12.50:
-    dev: true
-    resolution:
-      integrity: sha512-5ImO01Fb8YsEOYpV+aeyGYztcYcjGsBvN4D7G5r1ef2cuQOpymjWNQi5V0rKHE6PC2ru3HkoUr/Br2/8GUA84w==
   /@types/node/14.14.37:
     dev: true
     resolution:
@@ -357,12 +353,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-4K0cK3L1hsqk9xIb2z9vs/XU+PGJZ9PNpJRDS9YLzmNdX6jmVPfamLvTJr0aDAusnHyCHO6MjzlkAsgtqp9teA==
-  /ansi-colors/3.2.3:
-    dev: true
-    engines:
-      node: '>=6'
-    resolution:
-      integrity: sha512-LEHHyuhlPY3TmuUYMh2oz89lTShfvgbmzaBcxve9t/9Wuy7Dwf4yoAKcND7KFT1HAQfqZ12qtc+DUrBMeKF9nw==
   /ansi-colors/4.1.1:
     dev: true
     engines:
@@ -559,7 +549,7 @@ packages:
   /chalk/4.1.0:
     dependencies:
       ansi-styles: 4.2.1
-      supports-color: 7.1.0
+      supports-color: 7.2.0
     dev: true
     engines:
       node: '>=10'
@@ -649,6 +639,12 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
+  /commander/7.2.0:
+    dev: true
+    engines:
+      node: '>= 10'
+    resolution:
+      integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -707,6 +703,7 @@ packages:
   /debug/3.2.6:
     dependencies:
       ms: 2.1.2
+    deprecated: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
     dev: true
     resolution:
       integrity: sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
@@ -765,12 +762,6 @@ packages:
     optional: true
     resolution:
       integrity: sha512-ZIzRpLJrOj7jjP2miAtgqIfmzbxa4ZOr5jJc601zklsfEx9oTzmmj2nVpIPRpNlRTIh8lc1kyViIY7BWSGNmKw==
-  /diff/3.5.0:
-    dev: true
-    engines:
-      node: '>=0.3.1'
-    resolution:
-      integrity: sha512-A46qtFgd+g7pDZinpnwiRJtxbC1hpgf0uzP3iG89scHk0AUC7A1TGxf5OiiOUv/JMZR8GOt8hL900hV0bOy5xA==
   /diff/4.0.2:
     dev: true
     engines:
@@ -793,10 +784,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-eZoZPPJcUHnfRZ0PjLvx2qBordSiO8ofC3vt+qACLM95u+4DovnbYNpQtJh0DNsWj8RnxrQytD4WA8gj5cRIaQ==
-  /electron/9.1.0:
+  /electron/12.0.2:
     dependencies:
       '@electron/get': 1.12.2
-      '@types/node': 12.12.50
+      '@types/node': 14.14.37
       extract-zip: 1.7.0
     dev: true
     engines:
@@ -804,7 +795,7 @@ packages:
     hasBin: true
     requiresBuild: true
     resolution:
-      integrity: sha512-VRAF8KX1m0py9I9sf0kw1kWfeC87mlscfFcbcRdLBsNJ44/GrJhi3+E8rKbpHUeZNQxsPaVA5Zu5Lxb6dV/scQ==
+      integrity: sha512-14luh9mGzfL4e0sncyy0+kW37IU7Y0Y1tvI97FDRSW0ZBQxi5cmAwSs5dmPmNBFBIGtzkaGaEB01j9RjZuCmow==
   /emoji-regex/7.0.3:
     dev: true
     resolution:
@@ -1139,6 +1130,7 @@ packages:
   /flat/4.1.0:
     dependencies:
       is-buffer: 2.0.4
+    deprecated: Fixed a prototype pollution security issue in 4.1.0, please upgrade to ^4.1.1 or ^5.0.1.
     dev: true
     hasBin: true
     resolution:
@@ -1147,22 +1139,23 @@ packages:
     dev: true
     resolution:
       integrity: sha512-r5wGx7YeOwNWNlCA0wQ86zKyDLMQr+/RB8xy74M4hTphfmjlijTSSXGuH8rnvKZnfT9i+75zmd8jcKdMR4O6jA==
-  /floss/3.0.0_electron@9.1.0:
+  /floss/5.0.0_electron@12.0.2:
     dependencies:
-      chalk: 2.4.2
-      commander: 2.20.3
-      electron: 9.1.0
-      mocha: 6.2.3
-      resolve: 1.17.0
+      chalk: 4.1.0
+      commander: 7.2.0
+      electron: 12.0.2
+      glob: 7.1.6
+      mocha: 8.0.1
+      resolve: 1.20.0
     dev: true
     engines:
-      node: '>=6.0'
+      node: '>=10.0'
     hasBin: true
     peerDependencies:
-      electron: '>=1'
+      electron: '>=12'
       nyc: '>=13'
     resolution:
-      integrity: sha512-nBqFZhHcN6SX3jkH8+ftG4S/a0XDOEYh6DrCyOkdhcPaq8yi2AQt420jIcOhh350I61zHHfgYXD3rkfoYPS4fQ==
+      integrity: sha512-vY1fl3tNgWfhfomDTXT2NDi66LiIa12ISPF03+jVAq+m0ccCm3z0ZlT/7tYz6n2N+n+QO8qS93Z6cnAMuESVYg==
   /fs-extra/8.1.0:
     dependencies:
       graceful-fs: 4.2.4
@@ -1228,17 +1221,6 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-FnI+VGOpnlGHWZxthPGR+QhR78fuiK0sNLkHQv+bL9fQi57lNNdquIbna/WrfROrolq8GK5Ek6BiMwqL/voRYQ==
-  /glob/7.1.3:
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 3.0.4
-      once: 1.4.0
-      path-is-absolute: 1.0.1
-    dev: true
-    resolution:
-      integrity: sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==
   /glob/7.1.6:
     dependencies:
       fs.realpath: 1.0.0
@@ -1398,6 +1380,7 @@ packages:
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
   /ini/1.3.5:
+    deprecated: Please update to ini >=1.3.6 to avoid a prototype pollution issue
     dev: true
     optional: true
     resolution:
@@ -1652,14 +1635,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
-  /log-symbols/2.2.0:
-    dependencies:
-      chalk: 2.4.2
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-VeIAFslyIerEJLXHziedo2basKbMKtTw3vfn5IzG0XTjhAVEJyNHnL2p7vc+wBDSdQuUpNw3M2u6xb9QsAY5Eg==
   /log-symbols/3.0.0:
     dependencies:
       chalk: 2.4.2
@@ -1721,14 +1696,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
-  /mkdirp/0.5.4:
-    dependencies:
-      minimist: 1.2.5
-    deprecated: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
-    dev: true
-    hasBin: true
-    resolution:
-      integrity: sha512-iG9AK/dJLtJ0XNgTuDbSyNS3zECqDlAhnQW4CsNxBG3LQJBbHmRX1egw39DmtOdCAqY+dKXV+sgPgilNWUKMVw==
   /mkdirp/0.5.5:
     dependencies:
       minimist: 1.2.5
@@ -1736,37 +1703,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
-  /mocha/6.2.3:
-    dependencies:
-      ansi-colors: 3.2.3
-      browser-stdout: 1.3.1
-      debug: 3.2.6
-      diff: 3.5.0
-      escape-string-regexp: 1.0.5
-      find-up: 3.0.0
-      glob: 7.1.3
-      growl: 1.10.5
-      he: 1.2.0
-      js-yaml: 3.13.1
-      log-symbols: 2.2.0
-      minimatch: 3.0.4
-      mkdirp: 0.5.4
-      ms: 2.1.1
-      node-environment-flags: 1.0.5
-      object.assign: 4.1.0
-      strip-json-comments: 2.0.1
-      supports-color: 6.0.0
-      which: 1.3.1
-      wide-align: 1.1.3
-      yargs: 13.3.2
-      yargs-parser: 13.1.2
-      yargs-unparser: 1.6.0
-    dev: true
-    engines:
-      node: '>= 6.0.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-0R/3FvjIGH3eEuG17ccFPk117XL2rWxatr81a57D+r/x2uTYZRbdZ4oVidEUMh2W2TJDa7MdAb12Lm2/qrKajg==
   /mocha/8.0.1:
     dependencies:
       ansi-colors: 4.1.1
@@ -1804,10 +1740,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
-  /ms/2.1.1:
-    dev: true
-    resolution:
-      integrity: sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
   /ms/2.1.2:
     dev: true
     resolution:
@@ -1832,13 +1764,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
-  /node-environment-flags/1.0.5:
-    dependencies:
-      object.getownpropertydescriptors: 2.1.0
-      semver: 5.7.1
-    dev: true
-    resolution:
-      integrity: sha512-VNYPRfGfmZLx0Ye20jWzHUjyTW/c+6Wq+iLhDzUI4XmhrDd9l/FozXV3F2xOaXjvp0co0+v1YSR3CMP6g+VvLQ==
   /node-modules-regexp/1.0.0:
     dev: true
     engines:
@@ -1894,15 +1819,6 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-exHJeq6kBKj58mqGyTQ9DFvrZC/eR6OwxzoM9YRoGBqrXYonaFyGiFMuc9VZrXf7DarreEwMpurG3dd+CNyW5w==
-  /object.getownpropertydescriptors/2.1.0:
-    dependencies:
-      define-properties: 1.1.3
-      es-abstract: 1.17.6
-    dev: true
-    engines:
-      node: '>= 0.8'
-    resolution:
-      integrity: sha512-Z53Oah9A3TdLoblT7VKJaTDdXdT+lQO+cNpKVnya5JDe9uLvzu1YyY1yFDFrcxrlRgWrEFH0jJtD/IbuwjcEVg==
   /once/1.4.0:
     dependencies:
       wrappy: 1.0.2
@@ -2153,12 +2069,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
-  /resolve/1.17.0:
-    dependencies:
-      path-parse: 1.0.6
-    dev: true
-    resolution:
-      integrity: sha512-ic+7JYiV8Vi2yzQGFWOkiZD5Z9z7O2Zhm9XMaTxdJExKasieFCr+yXZ/WmXsckHiKl12ar0y6XiXDx3m4RHn1w==
   /resolve/1.20.0:
     dependencies:
       is-core-module: 2.2.0
@@ -2487,12 +2397,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-AuvKTrTfQNYNIctbR1K/YGTR1756GycPsg7b9bdV9Duqur4gv6aKqHXah67Z8ImS7WEz5QVcOtlfW2rZEugt6w==
-  /strip-json-comments/2.0.1:
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-PFMZQukIwml8DsNEhYwobHygpgo=
   /strip-json-comments/3.0.1:
     dev: true
     engines:
@@ -2535,14 +2439,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
-  /supports-color/6.0.0:
-    dependencies:
-      has-flag: 3.0.0
-    dev: true
-    engines:
-      node: '>=6'
-    resolution:
-      integrity: sha512-on9Kwidc1IUQo+bQdhi8+Tijpo0e1SS6RoGo2guUwn5vdaxw8RXOF9Vb2ws+ihWOmh4JnCJOvaziZWP1VABaLg==
   /supports-color/7.1.0:
     dependencies:
       has-flag: 4.0.0
@@ -2849,10 +2745,10 @@ specifiers:
   '@pixi/math': ^6.0.0
   '@pixi/ticker': ^6.0.0
   chai: ^4.2.0
-  electron: ^9.1.0
+  electron: ^12.0.0
   eslint: ^6.8.0
   eslint-config-pixi: ^1.0.0
-  floss: ^3.0.0
+  floss: ^5.0.0
   mocha: ^8.0.1
   rollup: ^2.21.0
   typescript: ^3.8.2

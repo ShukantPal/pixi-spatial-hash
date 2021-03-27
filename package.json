@@ -36,10 +36,10 @@
     "@pixi/math": "^6.0.0",
     "@pixi/ticker": "^6.0.0",
     "chai": "^4.2.0",
-    "electron": "^9.1.0",
+    "electron": "^12.0.0",
     "eslint": "^6.8.0",
     "eslint-config-pixi": "^1.0.0",
-    "floss": "^3.0.0",
+    "floss": "^5.0.0",
     "mocha": "^8.0.1",
     "rollup": "^2.21.0",
     "typescript": "^3.8.2"
